@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Products</title>
+</head>
+<body>
+
+    <header class="py-5 w-full text-black font-heading">
+         <div class="container h-full flex justify-between items-center ">
+            <div class="logo flex items-center lg:gap-10 md:gap-5 gap-7">
+                <img src="./assets/imgs/public/logo.jpg" alt="" class="w-20 h-20 rounded-full object-cover ">
+
+                <div class="block md:hidden">
+                 <i class="fa-solid fa-bars text-lg "></i>
+                </div>
+
+                 <div class="nav lg:text-lg text-md md:block hidden">
+                     <ul class="flex lg:gap-5 gap-1">
+                    <li>
+                        <a href="./index.html " class="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Categories</a>
+                    </li>
+                    <li>
+                        <a href="">Products</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            </div>
+
+             <div class="row ">
+                <form class=" border hidden md:flex items-center border-slate-200 rounded-md p-1  " >
+                    <input name="input-navbar" class="p-1 md:block hidden " type="text" placeholder="Search Products">
+                    <button class=""><i class=" p-1 fa-solid fa-magnifying-glass "></i></button>
+                </form>
+                <div class="row gap-3">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-regular fa-user"></i>
+
+                </div>
+             </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="">
+        <div class=" container">
+        <div class="flex justify-between">
+            <h3 class="text-3xl font-bold text-purple-500 ">All Products</h3>
+            <form class="select max-w-md flex items-center gap-2">
+            <label for="title-price" class=" ">Order By</label>
+            <select  class="block title-price p-3 border rounded-md border-mauve-300">
+            <option selected value="title-asc">title Asc</option>
+            <option value="title-desc">title Desc</option>
+            <option value="price-asc">price Asc</option>
+            <option value="price-desc">price Desc</option>
+          </select>
+            </form>
+        </div>
+        
+        <span class="loader hidden"></span>
+        <div class="products mt-10 grid md:grid-cols-3 sm:grid-cols-2  grid-cols-1 md:gap-5 gap-3 justify-items-center ">
+            <p class="hidden no-products">No Products Available</p>
+        </div>
+        <ul class="pagination flex justify-center mt-10 gap-3"></ul>
+          
+      </div>
+    </section>
+
+    </main>
+    
+    <footer class="py-7 bg-purple-950 mt-10 ">
+        <div class="container grid md:grid-cols-4 grid-cols-2 md:gap-10 gap-7 text-secondary">
+            <div class="flex gap-3 items-center ">
+                <i class="fa-solid fa-cart-flatbed text-2xl"></i>
+                <div class="flex flex-col gap-1 ">
+                    <h4>Free Shipping</h4>
+                    <p >On all orders over $50</p>
+                </div>
+
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <i class="fa-solid fa-arrow-rotate-left text-2xl"></i>
+                <div class="flex flex-col gap-1 ">
+                    <h4>30-Day Returns</h4>
+                    <p >Easy returns & refunds</p>
+                </div>
+                
+            </div>
+              <div class="flex gap-3 items-center">
+                <i class="fa-solid fa-shop-lock text-2xl"></i>
+                <div class="flex flex-col gap-1 ">
+                    <h4>Secure Payment</h4>
+                    <p >100% secure payments</p>
+                </div>
+                
+            </div>
+
+             <div class="flex gap-3 items-center">
+                <i class="fa-solid fa-hands-holding text-2xl"></i>
+                <div class="flex flex-col gap-1 ">
+                    <h4>24/7 Support</h4>
+                    <p >Dedicated support</p>
+                </div>
+                
+            </div>
+        </div>
+
+    </footer>
+    
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script src="./assets/js/product-category.js"></script>
+</body>
+</html>

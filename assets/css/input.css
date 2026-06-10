@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rufina:wght@400;700&display=swap');
+
+@theme{
+    --color-background:#233000;
+    --color-primary:#000000;
+    --color-paragraph:#4D4D4D;
+    --color-secondary:#FFFFFF;
+    --color-background-section:#EBF0E4;
+    --font-heading:"Rufina", serif;
+    --font-body:"Lato", sans-serif;
+
+}
+
+@layer base{
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    h1,h2,h3,h4{
+        @apply  font-heading;
+    }
+    p{
+        
+    }
+}
+
+
+@utility container{
+    @apply mx-auto;
+    padding-inline:1rem;
+    
+}
+@utility row{
+    @apply flex flex-row items-center md:gap-4 gap-2;
+}
+
+.hero-contact{
+    background-image: url('./../imgs/Contact/hero.png');
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #4a4848;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+

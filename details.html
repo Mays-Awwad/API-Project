@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Details</title>
+</head>
+<body>
+    <header class="py-5 w-full text-black font-heading">
+         <div class="container h-full flex justify-between items-center ">
+            <div class="logo flex items-center lg:gap-10 md:gap-5 gap-7">
+                <img src="./assets/imgs/public/logo.jpg" alt="" class="w-20 h-20 rounded-full object-cover ">
+
+                <div class="block md:hidden">
+                 <i class="fa-solid fa-bars text-lg "></i>
+                </div>
+
+                 <div class="nav lg:text-lg text-md md:block hidden">
+                     <ul class="flex lg:gap-5 gap-1">
+                    <li>
+                        <a href="./index.html " class="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Categories</a>
+                    </li>
+                    <li>
+                        <a href="">Products</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            </div>
+
+             <div class="row ">
+                <form class=" border hidden md:flex items-center border-slate-200 rounded-md p-1  " >
+                    <input name="input-navbar" class="p-1 md:block hidden " type="text" placeholder="Search Products">
+                    <button class=""><i class=" p-1 fa-solid fa-magnifying-glass "></i></button>
+                </form>
+                <div class="row gap-3">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-regular fa-user"></i>
+
+                </div>
+             </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-details">
+             <span class="loader hidden"></span>
+            <div class="container">
+
+                <p class=" no-result hidden text-primary">Failed..</p>    
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="py-7 bg-purple-950 mt-10 ">
+        <div class="container grid md:grid-cols-4 grid-cols-2 md:gap-10 gap-7 text-secondary">
+            <div class="flex gap-3 items-center ">
+                <i class="fa-solid fa-cart-flatbed text-2xl"></i>
+                <div class="flex flex-col gap-1 ">
+                    <h4>Free Shipping</h4>
+                    <p >On all orders over $50</p>
+                </div>
+
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <i class="fa-solid fa-arrow-rotate-left text-2xl"></i>
+                <div class="flex flex-col gap-1 ">
+                    <h4>30-Day Returns</h4>
+                    <p >Easy returns & refunds</p>
+                </div>
+                
+            </div>
+              <div class="flex gap-3 items-center">
+                <i class="fa-solid fa-shop-lock text-2xl"></i>
+                <div class="flex flex-col gap-1 ">
+                    <h4>Secure Payment</h4>
+                    <p >100% secure payments</p>
+                </div>
+                
+            </div>
+
+             <div class="flex gap-3 items-center">
+                <i class="fa-solid fa-hands-holding text-2xl"></i>
+                <div class="flex flex-col gap-1 ">
+                    <h4>24/7 Support</h4>
+                    <p >Dedicated support</p>
+                </div>
+                
+            </div>
+        </div>
+
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/details.js"></script>
+</body>
+</html>

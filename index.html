@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+</head>
+<body>
+    <header class="py-5 w-full text-black font-heading">
+         <div class="container h-full flex justify-between items-center ">
+            <div class="logo flex items-center lg:gap-10 md:gap-5 gap-7">
+                <img src="./assets/imgs/public/logo.jpg" alt="" class="w-20 h-20 rounded-full object-cover ">
+
+                <div class="block md:hidden">
+                 <i class="fa-solid fa-bars text-lg "></i>
+                </div>
+
+                 <div class="nav lg:text-lg text-md md:block hidden">
+                     <ul class="flex lg:gap-5 gap-1">
+                    <li>
+                        <a href="./index.html" class="text-background">Home</a>
+                    </li>
+                    <li>
+                        <a href="./menu.html">Categories</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./Portfolio.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            </div>
+
+             <div class="row ">
+                <form class=" border hidden md:flex items-center border-slate-200 rounded-md p-1  " >
+                    <input name="input-navbar" class="p-1 md:block hidden " type="text" placeholder="Search Products">
+                    <button class=""><i class=" p-1 fa-solid fa-magnifying-glass "></i></button>
+                </form>
+                <div class="row gap-3">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-regular fa-user"></i>
+
+                </div>
+             </div>
+        </div>
+
+    </header>
+
+    <section class=" bg-[url('./../imgs/public/hero.png')] hero  bg-cover md:bg-center bg-top h-screen ">
+        <div class="container h-full">
+            <div class=" h-full lg:max-w-xl md:max-w-md max-w-sm flex flex-col items-start justify-center gap-5">
+              <h1 class="text-primary/80 font-bold lg:text-7xl md:text-5xl text-4xl ">Discover Amazing <span class="text-purple-600">Products</span></h1>
+              <p class="text-paragraph lg:max-w-sm max-w-xs">Explore top categories and find the best products at the best price</p>
+              <button class="rounded-md flex gap-2 items-center px-4 py-2 bg-purple-950 text-secondary">
+                <span>Shop Now</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class=" py-5 categories">
+            <div class="container">
+                <h2 class="text-2xl font-bold">shop by category</h2>
+                <div class=" mt-3 category flex flex-wrap gap-3">
+                    <span class="loader hidden"></span> 
+                     
+                </div>
+                <p class=" no-category hidden text-primary"> Not Found Category</p>
+            </div>
+
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="title flex items-center gap-3">
+                    <h2 class="text-3xl font-bold">Products</h2>
+                    <span class="text-xs text-paragraph">Showing 10 Products</span>
+                </div>
+                <div class="products grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 md:gap-4 gap-2">
+                    <span class="loader hidden"></span> 
+                    <p class=" no-products hidden text-primary"> Not Found Category</p>
+                </div>
+                
+            </div>
+
+        </section>
+    </main>
+
+    
+
+    <footer class="py-7 bg-purple-950 mt-10 ">
+        <div class="container grid md:grid-cols-4 grid-cols-2 md:gap-10 gap-7 text-secondary">
+            <div class="flex gap-3 items-center ">
+                <i class="fa-solid fa-cart-flatbed text-2xl"></i>
+                <div class="flex flex-col gap-1 ">
+                    <h4>Free Shipping</h4>
+                    <p >On all orders over $50</p>
+                </div>
+
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <i class="fa-solid fa-arrow-rotate-left text-2xl"></i>
+                <div class="flex flex-col gap-1 ">
+                    <h4>30-Day Returns</h4>
+                    <p >Easy returns & refunds</p>
+                </div>
+                
+            </div>
+              <div class="flex gap-3 items-center">
+                <i class="fa-solid fa-shop-lock text-2xl"></i>
+                <div class="flex flex-col gap-1 ">
+                    <h4>Secure Payment</h4>
+                    <p >100% secure payments</p>
+                </div>
+                
+            </div>
+
+             <div class="flex gap-3 items-center">
+                <i class="fa-solid fa-hands-holding text-2xl"></i>
+                <div class="flex flex-col gap-1 ">
+                    <h4>24/7 Support</h4>
+                    <p >Dedicated support</p>
+                </div>
+                
+            </div>
+        </div>
+
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
